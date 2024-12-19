@@ -44,9 +44,13 @@ public class TagChecking {
                     stack.printStack(System.out);
                 }
 
+                
                 matcher = closePattern.matcher(line);
                 while (matcher.find(lastEnd))
-                {
+                {   
+                    // if lastEnd is 0 then there is closing tag 
+                    // without the corresponding opening one
+                    if (stack.isEmpty() && lastEnd == 0) return false;
                     if (stack.peek().equals(matcher.group(1)))
                     {
                         lastEnd = matcher.end();
@@ -66,6 +70,8 @@ public class TagChecking {
             return false;
         }
 
+        if (!stack.isEmpty()) return false;
+        
         return true;
 
     }

@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+package ex1;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,7 +10,6 @@ public class NetProfit {
 
         int temp = 0; // (des meta) thn xrhsimopoiw gia na elegxw an to palaiotero bunch metoxwn eparkei apo mono tou gia thn pwlhsh
         // kai gia na meinei sthn mnhmh to ypoloipo amount apo metoxes ekeinh thn stigmh gia melodikh pwlhsh
-
 
         try {   // elegxw katarxas an borw na akoiksw to arxeio
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));  //anoigw to arxeio

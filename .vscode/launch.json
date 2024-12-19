@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NetProfit",
+            "request": "launch",
+            "mainClass": "ex1.NetProfit",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -16,7 +23,12 @@
             "request": "launch",
             "mainClass": "ex1.App",
             "projectName": "app",
-            "args": ["app/src/test/resources/test6.html"], // Add the parameters you want to pass
-        },
+            "args": [
+                // give any argument here
+                // recommending to add any testing file to 
+                // app/src/test/resources/ path
+                "app/src/test/resources/test6.html"
+            ]
+        }
     ]
 }

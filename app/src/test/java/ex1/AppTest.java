@@ -17,6 +17,8 @@ public class AppTest {
         stackFalse.push("test1.html");
         stackFalse.push("test2.html");
         stackFalse.push("test5.html");
+        stackFalse.push("test7.html");
+        stackFalse.push("test8.html");
         
         stackTrue.push("test.html");
         stackTrue.push("test3.html");
